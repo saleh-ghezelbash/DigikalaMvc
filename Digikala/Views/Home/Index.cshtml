@@ -1,0 +1,2935 @@
+﻿@model IEnumerable<Digikala.DataLayer.Entities.Slider>
+@{
+    ViewData["Title"] = "فروشگاه اینترنتی دیجی کالا";
+}
+
+ <main>
+        <article class="container">
+            <div class="c-sliders">
+                <div class="c-top_banner">
+                    <div class="c-top_banner_img"></div>
+                </div>
+                <div class="c-sliders_row">
+                    <div class="c-sliders_right">
+                        <aside class="c-sliders_right-singleimg">
+                            <a href="#">
+                                <img src="/img/banner/right_banner.jpg">
+                            </a>
+                        </aside>
+
+                        <aside class="c-sliders_right-feature">
+                            <div class="c-sliders_right-feature_items">
+                                <a href="#">
+                                    <div class="c-sliders_right-feature_item c-sliders_right-feature_item-1">تحویل
+                                        اکسپرس</div>
+                                </a>
+                                <a href="#">
+                                    <div class="c-sliders_right-feature_item c-sliders_right-feature_item-2">پشتیبانی ۲۴
+                                        ساعته</div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="c-sliders_right-feature_item c-sliders_right-feature_item-3">پرداخت در
+                                        محل</div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="c-sliders_right-feature_item c-sliders_right-feature_item-4">۷ رو ضمانت
+                                        بازگشت</div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="c-sliders_right-feature_item c-sliders_right-feature_item-5">ضمانت اصل
+                                        بودن کالا</div>
+                                </a>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="c-sliders_left">
+
+                        <section class="c-main_slider c-desktop_main-slider js-main_slider">
+                            <div class="c-slider_slide swiper-wrapper">
+                                @foreach(var item in Model)
+                                {
+
+                                <a class="c-slide js-slide swiper-slide" title="@item.Descrption" style="background-image:url(/img/slider/@item.ImgName)"
+                                    href="@item.Link"></a>
+                                }
+                               @* <a class="c-slide js-slide swiper-slide" style="background-image:url(/img/slider/2.jpg)"
+                                    href="#"></a>
+                                <a class="c-slide js-slide swiper-slide" style="background-image:url(/img/slider/3.jpg)"
+                                    href="#"></a>
+                                <a class="c-slide js-slide swiper-slide" style="background-image:url(/img/slider/4.jpg)"
+                                    href="#"></a>
+                                <a class="c-slide js-slide swiper-slide" style="background-image:url(/img/slider/5.jpg)"
+                                    href="#"></a>*@
+                            </div>
+
+                            <div class="c-slider_dots">
+
+
+                            </div>
+
+                            <div class="c-slider_next js-slider_next"></div>
+                            <div class="c-slider_prev js-slider_prev"></div>
+
+                        </section>
+
+                        <section class="c-main_slider mobil-main_slider js-main_slider">
+                            <div class="c-slider_slide swiper-wrapper">
+                                  @foreach(var item in Model)
+                                {
+
+                                <a class="c-slide js-slide swiper-slide" title="@item.Descrption" style="background-image:url(/img/slider/mobile-slider/@item.ImgName)"
+                                    href="@item.Link"></a>
+                                }
+                             @*   <a class="c-slide js-slide swiper-slide"
+                                    style="background-image:url(/img/slider/mobile-slider/1.png)" href="#"></a>
+                                <a class="c-slide js-slide swiper-slide"
+                                    style="background-image:url(/img/slider/mobile-slider/2.png)" href="#"></a>
+                                <a class="c-slide js-slide swiper-slide"
+                                    style="background-image:url(/img/slider/mobile-slider/3.png)" href="#"></a>
+                                <a class="c-slide js-slide swiper-slide"
+                                    style="background-image:url(/img/slider/mobile-slider/4.png)" href="#"></a>
+                                <a class="c-slide js-slide swiper-slide"
+                                    style="background-image:url(/img/slider/mobile-slider/5.png)" href="#"></a>*@
+                            </div>
+
+                            <div class="c-slider_dots">
+
+
+                            </div>
+
+                            <div class="c-slider_next js-slider_next"></div>
+                            <div class="c-slider_prev js-slider_prev"></div>
+
+                        </section>
+
+                        <div class="c-sliders_discount">
+                            <div class="c-dicount_right">
+                                <aside class="c-discount_right-singleimg">
+                                    <a href="#">
+                                        <img src="/img/banner/right_banner.jpg">
+                                    </a>
+                                </aside>
+
+                                <a class="c-discount_right-show_more">
+                                    مشاهده همه شگفت‌انگیزها
+                                </a>
+                            </div>
+                            <section class="c-discount_left">
+                                <div class="c-discount">
+
+                                    <div class="mobile-discount_image-title">
+                                        <img src="/img/search/discount-image.png">
+                                    </div>
+                                    <div class="c-discount_box">
+                                        <div class="c-discount_product">
+                                            <div class="c-discount_container is-active js-discount_container">
+                                                <a href="#" class="c-discount_product-url"></a>
+
+                                                <div class="c-discount_content">
+                                                    <div class="c-discount_image">
+                                                        <div class="c-discount_image-top-bar"></div>
+                                                        <img src="/img/discount/1.jpg" alt="ساعت">
+                                                    </div>
+
+                                                    <div class="c-discount_prop">
+                                                        <div class="c-discount_prop-row">
+                                                            <div class="mobile-discount_title">
+                                                                اجاق گاز صفحه‌ای پرینسپ مدل PL532
+                                                            </div>
+                                                            <div class="c-discount_price js-discount_price">
+                                                                <div class="c-discount_price-primary">
+                                                                    <span class="c-discount_price-original">
+                                                                        ۱۱۸۰۰۰۰۰
+                                                                        <span>تومان</span>
+                                                                    </span>
+
+                                                                    <span class="c-discount_price-now">
+                                                                        ۸۹۸۰۰۰
+                                                                        <span>تومان</span>
+                                                                    </span>
+
+                                                                </div>
+
+                                                                <div class="mobile-discount_price-primary">
+                                                                    ۱۱۸۰۰۰۰۰
+                                                                    <span>تومان</span>
+                                                                    <del>۸۹۸۰۰۰</del>
+                                                                </div>
+
+
+                                                                <div class="c-discount_price-discount">
+                                                                    <div class="c-discount_price-dicount_content">
+                                                                        ۲۴%
+                                                                        <span>تخفیف</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="c-discount_price-finish js-discount_price-finish">
+                                                                اتمام موجودی شگفت‌انگیز
+                                                            </div>
+
+                                                            <div class="c-discount_title">
+                                                                اجاق گاز صفحه‌ای پرینسپ مدل PL532
+                                                            </div>
+
+                                                            <ul class="c-discount_ul">
+                                                                <li>محدوده سایز:85 و بزرگتر از 85</li>
+                                                                <li>تعداد شعله: 5</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="c-discount_prop-row">
+                                                            <div class="c-discount_counter js-discount_counter">
+                                                                <div class="c-counter js-counter"
+                                                                    data-nowdate="2018-10-10T12:35:20.000Z"
+                                                                    data-discountdate="2018-10-10T12:25:35.000Z">
+
+                                                                </div>
+                                                                <div class="c-discount_counter-title">
+                                                                    زمان باقیمانده تا پایان سفارش
+                                                                </div>
+
+                                                            </div>
+                                                            <div
+                                                                class="c-discount_counter c-discount_counter-finish js-discount_counter-finish">
+                                                                <div class="c-discount_price">
+                                                                    <div class="c-discount_price-primary">
+                                                                        <span class="c-discount_price-now">
+                                                                            ۸۹۸۰۰۰
+                                                                            <span>تومان</span>
+                                                                        </span>
+                                                                        <div class="c-discount_counter-title">
+                                                                            بدون تخفیف شگفت انگیز
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="c-discount_container is-active js-discount_container">
+                                                <a href="#" class="c-discount_product-url"></a>
+
+                                                <div class="c-discount_content">
+                                                    <div class="c-discount_image">
+                                                        <div class="c-discount_image-top-bar"></div>
+                                                        <img src="/img/discount/2.jpg" alt="ساعت">
+                                                    </div>
+
+                                                    <div class="c-discount_prop">
+                                                        <div class="c-discount_prop-row">
+                                                            <div class="mobile-discount_title">
+                                                                اجاق گاز صفحه‌ای پرینسپ مدل PL532
+                                                            </div>
+                                                            <div class="c-discount_price js-discount_price">
+                                                                <div class="c-discount_price-primary">
+                                                                    <span class="c-discount_price-original">
+                                                                        ۱۱۸۰۰۰۰۰
+                                                                        <span>تومان</span>
+                                                                    </span>
+
+                                                                    <span class="c-discount_price-now">
+                                                                        ۸۹۸۰۰۰
+                                                                        <span>تومان</span>
+                                                                    </span>
+
+                                                                </div>
+
+                                                                <div class="mobile-discount_price-primary">
+                                                                    ۱۱۸۰۰۰۰۰
+                                                                    <span>تومان</span>
+                                                                    <del>۸۹۸۰۰۰</del>
+                                                                </div>
+
+
+                                                                <div class="c-discount_price-discount">
+                                                                    <div class="c-discount_price-dicount_content">
+                                                                        ۲۴%
+                                                                        <span>تخفیف</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="c-discount_price-finish js-discount_price-finish">
+                                                                اتمام موجودی شگفت‌انگیز
+                                                            </div>
+
+                                                            <div class="c-discount_title">
+                                                                اجاق گاز صفحه‌ای پرینسپ مدل PL532
+                                                            </div>
+
+                                                            <ul class="c-discount_ul">
+                                                                <li>محدوده سایز:85 و بزرگتر از 85</li>
+                                                                <li>تعداد شعله: 5</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="c-discount_prop-row">
+                                                            <div class="c-discount_counter js-discount_counter">
+                                                                <div class="c-counter js-counter"
+                                                                    data-nowdate="2018-10-10T12:35:20.000Z"
+                                                                    data-discountdate="2018-10-10T12:35:35.000Z">
+
+                                                                </div>
+                                                                <div class="c-discount_counter-title">
+                                                                    زمان باقیمانده تا پایان سفارش
+                                                                </div>
+
+                                                            </div>
+                                                            <div
+                                                                class="c-discount_counter c-discount_counter-finish js-discount_counter-finish">
+                                                                <div class="c-discount_price">
+                                                                    <div class="c-discount_price-primary">
+                                                                        <span class="c-discount_price-now">
+                                                                            ۸۹۸۰۰۰
+                                                                            <span>تومان</span>
+                                                                        </span>
+                                                                        <div class="c-discount_counter-title">
+                                                                            بدون تخفیف شگفت انگیز
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="c-discount_container is-active js-discount_container">
+                                                <a href="#" class="c-discount_product-url"></a>
+
+                                                <div class="c-discount_content">
+                                                    <div class="c-discount_image">
+                                                        <div class="c-discount_image-top-bar"></div>
+                                                        <img src="/img/discount/3.jpg" alt="ساعت">
+                                                    </div>
+
+                                                    <div class="c-discount_prop">
+                                                        <div class="c-discount_prop-row">
+                                                            <div class="mobile-discount_title">
+                                                                اجاق گاز صفحه‌ای پرینسپ مدل PL532
+                                                            </div>
+                                                            <div class="c-discount_price js-discount_price">
+                                                                <div class="c-discount_price-primary">
+                                                                    <span class="c-discount_price-original">
+                                                                        ۱۱۸۰۰۰۰۰
+                                                                        <span>تومان</span>
+                                                                    </span>
+
+                                                                    <span class="c-discount_price-now">
+                                                                        ۸۹۸۰۰۰
+                                                                        <span>تومان</span>
+                                                                    </span>
+
+                                                                </div>
+
+                                                                <div class="mobile-discount_price-primary">
+                                                                    ۱۱۸۰۰۰۰۰
+                                                                    <span>تومان</span>
+                                                                    <del>۸۹۸۰۰۰</del>
+                                                                </div>
+
+
+                                                                <div class="c-discount_price-discount">
+                                                                    <div class="c-discount_price-dicount_content">
+                                                                        ۲۴%
+                                                                        <span>تخفیف</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="c-discount_price-finish js-discount_price-finish">
+                                                                اتمام موجودی شگفت‌انگیز
+                                                            </div>
+
+                                                            <div class="c-discount_title">
+                                                                اجاق گاز صفحه‌ای پرینسپ مدل PL532
+                                                            </div>
+
+                                                            <ul class="c-discount_ul">
+                                                                <li>محدوده سایز:85 و بزرگتر از 85</li>
+                                                                <li>تعداد شعله: 5</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="c-discount_prop-row">
+                                                            <div class="c-discount_counter js-discount_counter">
+                                                                <div class="c-counter js-counter"
+                                                                    data-nowdate="2018-10-10T12:35:20.000Z"
+                                                                    data-discountdate="2018-10-10T12:35:35.000Z">
+
+                                                                </div>
+                                                                <div class="c-discount_counter-title">
+                                                                    زمان باقیمانده تا پایان سفارش
+                                                                </div>
+
+                                                            </div>
+                                                            <div
+                                                                class="c-discount_counter c-discount_counter-finish js-discount_counter-finish">
+                                                                <div class="c-discount_price">
+                                                                    <div class="c-discount_price-primary">
+                                                                        <span class="c-discount_price-now">
+                                                                            ۸۹۸۰۰۰
+                                                                            <span>تومان</span>
+                                                                        </span>
+                                                                        <div class="c-discount_counter-title">
+                                                                            بدون تخفیف شگفت انگیز
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="c-discount_container is-active js-discount_container">
+                                                <a href="#" class="c-discount_product-url"></a>
+
+                                                <div class="c-discount_content">
+                                                    <div class="c-discount_image">
+                                                        <div class="c-discount_image-top-bar"></div>
+                                                        <img src="/img/discount/4.jpg" alt="ساعت">
+                                                    </div>
+
+                                                    <div class="c-discount_prop">
+                                                        <div class="c-discount_prop-row">
+                                                            <div class="mobile-discount_title">
+                                                                اجاق گاز صفحه‌ای پرینسپ مدل PL532
+                                                            </div>
+                                                            <div class="c-discount_price js-discount_price">
+                                                                <div class="c-discount_price-primary">
+                                                                    <span class="c-discount_price-original">
+                                                                        ۱۱۸۰۰۰۰۰
+                                                                        <span>تومان</span>
+                                                                    </span>
+
+                                                                    <span class="c-discount_price-now">
+                                                                        ۸۹۸۰۰۰
+                                                                        <span>تومان</span>
+                                                                    </span>
+
+                                                                </div>
+
+                                                                <div class="mobile-discount_price-primary">
+                                                                    ۱۱۸۰۰۰۰۰
+                                                                    <span>تومان</span>
+                                                                    <del>۸۹۸۰۰۰</del>
+                                                                </div>
+
+
+                                                                <div class="c-discount_price-discount">
+                                                                    <div class="c-discount_price-dicount_content">
+                                                                        ۲۴%
+                                                                        <span>تخفیف</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="c-discount_price-finish js-discount_price-finish">
+                                                                اتمام موجودی شگفت‌انگیز
+                                                            </div>
+
+                                                            <div class="c-discount_title">
+                                                                اجاق گاز صفحه‌ای پرینسپ مدل PL532
+                                                            </div>
+
+                                                            <ul class="c-discount_ul">
+                                                                <li>محدوده سایز:85 و بزرگتر از 85</li>
+                                                                <li>تعداد شعله: 5</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="c-discount_prop-row">
+                                                            <div class="c-discount_counter js-discount_counter">
+                                                                <div class="c-counter js-counter"
+                                                                    data-nowdate="2018-10-10T12:35:20.000Z"
+                                                                    data-discountdate="2018-10-10T12:35:35.000Z">
+
+                                                                </div>
+                                                                <div class="c-discount_counter-title">
+                                                                    زمان باقیمانده تا پایان سفارش
+                                                                </div>
+
+                                                            </div>
+                                                            <div
+                                                                class="c-discount_counter c-discount_counter-finish js-discount_counter-finish">
+                                                                <div class="c-discount_price">
+                                                                    <div class="c-discount_price-primary">
+                                                                        <span class="c-discount_price-now">
+                                                                            ۸۹۸۰۰۰
+                                                                            <span>تومان</span>
+                                                                        </span>
+                                                                        <div class="c-discount_counter-title">
+                                                                            بدون تخفیف شگفت انگیز
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="c-discount_container is-active js-discount_container">
+                                                <a href="#" class="c-discount_product-url"></a>
+
+                                                <div class="c-discount_content">
+                                                    <div class="c-discount_image">
+                                                        <div class="c-discount_image-top-bar"></div>
+                                                        <img src="/img/discount/5.jpg" alt="ساعت">
+                                                    </div>
+
+                                                    <div class="c-discount_prop">
+                                                        <div class="c-discount_prop-row">
+                                                            <div class="mobile-discount_title">
+                                                                اجاق گاز صفحه‌ای پرینسپ مدل PL532
+                                                            </div>
+                                                            <div class="c-discount_price js-discount_price">
+                                                                <div class="c-discount_price-primary">
+                                                                    <span class="c-discount_price-original">
+                                                                        ۱۱۸۰۰۰۰۰
+                                                                        <span>تومان</span>
+                                                                    </span>
+
+                                                                    <span class="c-discount_price-now">
+                                                                        ۸۹۸۰۰۰
+                                                                        <span>تومان</span>
+                                                                    </span>
+
+                                                                </div>
+
+                                                                <div class="mobile-discount_price-primary">
+                                                                    ۱۱۸۰۰۰۰۰
+                                                                    <span>تومان</span>
+                                                                    <del>۸۹۸۰۰۰</del>
+                                                                </div>
+
+
+                                                                <div class="c-discount_price-discount">
+                                                                    <div class="c-discount_price-dicount_content">
+                                                                        ۲۴%
+                                                                        <span>تخفیف</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="c-discount_price-finish js-discount_price-finish">
+                                                                اتمام موجودی شگفت‌انگیز
+                                                            </div>
+
+                                                            <div class="c-discount_title">
+                                                                اجاق گاز صفحه‌ای پرینسپ مدل PL532
+                                                            </div>
+
+                                                            <ul class="c-discount_ul">
+                                                                <li>محدوده سایز:85 و بزرگتر از 85</li>
+                                                                <li>تعداد شعله: 5</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="c-discount_prop-row">
+                                                            <div class="c-discount_counter js-discount_counter">
+                                                                <div class="c-counter js-counter"
+                                                                    data-nowdate="2018-10-10T12:35:20.000Z"
+                                                                    data-discountdate="2018-10-10T12:35:35.000Z">
+
+                                                                </div>
+                                                                <div class="c-discount_counter-title">
+                                                                    زمان باقیمانده تا پایان سفارش
+                                                                </div>
+
+                                                            </div>
+                                                            <div
+                                                                class="c-discount_counter c-discount_counter-finish js-discount_counter-finish">
+                                                                <div class="c-discount_price">
+                                                                    <div class="c-discount_price-primary">
+                                                                        <span class="c-discount_price-now">
+                                                                            ۸۹۸۰۰۰
+                                                                            <span>تومان</span>
+                                                                        </span>
+                                                                        <div class="c-discount_counter-title">
+                                                                            بدون تخفیف شگفت انگیز
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="c-discount_container is-active js-discount_container">
+                                                <a href="#" class="c-discount_product-url"></a>
+
+                                                <div class="c-discount_content">
+                                                    <div class="c-discount_image">
+                                                        <div class="c-discount_image-top-bar"></div>
+                                                        <img src="/img/discount/6.jpg" alt="ساعت">
+                                                    </div>
+
+                                                    <div class="c-discount_prop">
+                                                        <div class="c-discount_prop-row">
+                                                            <div class="mobile-discount_title">
+                                                                اجاق گاز صفحه‌ای پرینسپ مدل PL532
+                                                            </div>
+                                                            <div class="c-discount_price js-discount_price">
+                                                                <div class="c-discount_price-primary">
+                                                                    <span class="c-discount_price-original">
+                                                                        ۱۱۸۰۰۰۰۰
+                                                                        <span>تومان</span>
+                                                                    </span>
+
+                                                                    <span class="c-discount_price-now">
+                                                                        ۸۹۸۰۰۰
+                                                                        <span>تومان</span>
+                                                                    </span>
+
+                                                                </div>
+
+                                                                <div class="mobile-discount_price-primary">
+                                                                    ۱۱۸۰۰۰۰۰
+                                                                    <span>تومان</span>
+                                                                    <del>۸۹۸۰۰۰</del>
+                                                                </div>
+
+
+                                                                <div class="c-discount_price-discount">
+                                                                    <div class="c-discount_price-dicount_content">
+                                                                        ۲۴%
+                                                                        <span>تخفیف</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="c-discount_price-finish js-discount_price-finish">
+                                                                اتمام موجودی شگفت‌انگیز
+                                                            </div>
+
+                                                            <div class="c-discount_title">
+                                                                اجاق گاز صفحه‌ای پرینسپ مدل PL532
+                                                            </div>
+
+                                                            <ul class="c-discount_ul">
+                                                                <li>محدوده سایز:85 و بزرگتر از 85</li>
+                                                                <li>تعداد شعله: 5</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="c-discount_prop-row">
+                                                            <div class="c-discount_counter js-discount_counter">
+                                                                <div class="c-counter js-counter"
+                                                                    data-nowdate="2018-10-10T12:35:20.000Z"
+                                                                    data-discountdate="2018-10-10T12:35:35.000Z">
+
+                                                                </div>
+                                                                <div class="c-discount_counter-title">
+                                                                    زمان باقیمانده تا پایان سفارش
+                                                                </div>
+
+                                                            </div>
+                                                            <div
+                                                                class="c-discount_counter c-discount_counter-finish js-discount_counter-finish">
+                                                                <div class="c-discount_price">
+                                                                    <div class="c-discount_price-primary">
+                                                                        <span class="c-discount_price-now">
+                                                                            ۸۹۸۰۰۰
+                                                                            <span>تومان</span>
+                                                                        </span>
+                                                                        <div class="c-discount_counter-title">
+                                                                            بدون تخفیف شگفت انگیز
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="c-discount_container is-active js-discount_container">
+                                                <a href="#" class="c-discount_product-url"></a>
+
+                                                <div class="c-discount_content">
+                                                    <div class="c-discount_image">
+                                                        <div class="c-discount_image-top-bar"></div>
+                                                        <img src="/img/discount/7.jpg" alt="ساعت">
+                                                    </div>
+
+                                                    <div class="c-discount_prop">
+                                                        <div class="c-discount_prop-row">
+                                                            <div class="mobile-discount_title">
+                                                                اجاق گاز صفحه‌ای پرینسپ مدل PL532
+                                                            </div>
+                                                            <div class="c-discount_price js-discount_price">
+                                                                <div class="c-discount_price-primary">
+                                                                    <span class="c-discount_price-original">
+                                                                        ۱۱۸۰۰۰۰۰
+                                                                        <span>تومان</span>
+                                                                    </span>
+
+                                                                    <span class="c-discount_price-now">
+                                                                        ۸۹۸۰۰۰
+                                                                        <span>تومان</span>
+                                                                    </span>
+
+                                                                </div>
+
+                                                                <div class="mobile-discount_price-primary">
+                                                                    ۱۱۸۰۰۰۰۰
+                                                                    <span>تومان</span>
+                                                                    <del>۸۹۸۰۰۰</del>
+                                                                </div>
+
+
+                                                                <div class="c-discount_price-discount">
+                                                                    <div class="c-discount_price-dicount_content">
+                                                                        ۲۴%
+                                                                        <span>تخفیف</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="c-discount_price-finish js-discount_price-finish">
+                                                                اتمام موجودی شگفت‌انگیز
+                                                            </div>
+
+                                                            <div class="c-discount_title">
+                                                                اجاق گاز صفحه‌ای پرینسپ مدل PL532
+                                                            </div>
+
+                                                            <ul class="c-discount_ul">
+                                                                <li>محدوده سایز:85 و بزرگتر از 85</li>
+                                                                <li>تعداد شعله: 5</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="c-discount_prop-row">
+                                                            <div class="c-discount_counter js-discount_counter">
+                                                                <div class="c-counter js-counter"
+                                                                    data-nowdate="2018-10-10T12:35:20.000Z"
+                                                                    data-discountdate="2018-10-10T12:35:35.000Z">
+
+                                                                </div>
+                                                                <div class="c-discount_counter-title">
+                                                                    زمان باقیمانده تا پایان سفارش
+                                                                </div>
+
+                                                            </div>
+                                                            <div
+                                                                class="c-discount_counter c-discount_counter-finish js-discount_counter-finish">
+                                                                <div class="c-discount_price">
+                                                                    <div class="c-discount_price-primary">
+                                                                        <span class="c-discount_price-now">
+                                                                            ۸۹۸۰۰۰
+                                                                            <span>تومان</span>
+                                                                        </span>
+                                                                        <div class="c-discount_counter-title">
+                                                                            بدون تخفیف شگفت انگیز
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="c-discount_container is-active js-discount_container">
+                                                <a href="#" class="c-discount_product-url"></a>
+
+                                                <div class="c-discount_content">
+                                                    <div class="c-discount_image">
+                                                        <div class="c-discount_image-top-bar"></div>
+                                                        <img src="/img/discount/8.jpg" alt="ساعت">
+                                                    </div>
+
+                                                    <div class="c-discount_prop">
+                                                        <div class="c-discount_prop-row">
+                                                            <div class="mobile-discount_title">
+                                                                اجاق گاز صفحه‌ای پرینسپ مدل PL532
+                                                            </div>
+                                                            <div class="c-discount_price js-discount_price">
+                                                                <div class="c-discount_price-primary">
+                                                                    <span class="c-discount_price-original">
+                                                                        ۱۱۸۰۰۰۰۰
+                                                                        <span>تومان</span>
+                                                                    </span>
+
+                                                                    <span class="c-discount_price-now">
+                                                                        ۸۹۸۰۰۰
+                                                                        <span>تومان</span>
+                                                                    </span>
+
+                                                                </div>
+
+                                                                <div class="mobile-discount_price-primary">
+                                                                    ۱۱۸۰۰۰۰۰
+                                                                    <span>تومان</span>
+                                                                    <del>۸۹۸۰۰۰</del>
+                                                                </div>
+
+
+                                                                <div class="c-discount_price-discount">
+                                                                    <div class="c-discount_price-dicount_content">
+                                                                        ۲۴%
+                                                                        <span>تخفیف</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="c-discount_price-finish js-discount_price-finish">
+                                                                اتمام موجودی شگفت‌انگیز
+                                                            </div>
+
+                                                            <div class="c-discount_title">
+                                                                اجاق گاز صفحه‌ای پرینسپ مدل PL532
+                                                            </div>
+
+                                                            <ul class="c-discount_ul">
+                                                                <li>محدوده سایز:85 و بزرگتر از 85</li>
+                                                                <li>تعداد شعله: 5</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="c-discount_prop-row">
+                                                            <div class="c-discount_counter js-discount_counter">
+                                                                <div class="c-counter js-counter"
+                                                                    data-nowdate="2018-10-10T12:35:20.000Z"
+                                                                    data-discountdate="2018-10-10T12:35:35.000Z">
+
+                                                                </div>
+                                                                <div class="c-discount_counter-title">
+                                                                    زمان باقیمانده تا پایان سفارش
+                                                                </div>
+
+                                                            </div>
+                                                            <div
+                                                                class="c-discount_counter c-discount_counter-finish js-discount_counter-finish">
+                                                                <div class="c-discount_price">
+                                                                    <div class="c-discount_price-primary">
+                                                                        <span class="c-discount_price-now">
+                                                                            ۸۹۸۰۰۰
+                                                                            <span>تومان</span>
+                                                                        </span>
+                                                                        <div class="c-discount_counter-title">
+                                                                            بدون تخفیف شگفت انگیز
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="c-discount_container is-active js-discount_container">
+                                                <a href="#" class="c-discount_product-url"></a>
+
+                                                <div class="c-discount_content">
+                                                    <div class="c-discount_image">
+                                                        <div class="c-discount_image-top-bar"></div>
+                                                        <img src="/img/discount/9.jpg" alt="ساعت">
+                                                    </div>
+
+                                                    <div class="c-discount_prop">
+                                                        <div class="c-discount_prop-row">
+                                                            <div class="mobile-discount_title">
+                                                                اجاق گاز صفحه‌ای پرینسپ مدل PL532
+                                                            </div>
+                                                            <div class="c-discount_price js-discount_price">
+                                                                <div class="c-discount_price-primary">
+                                                                    <span class="c-discount_price-original">
+                                                                        ۱۱۸۰۰۰۰۰
+                                                                        <span>تومان</span>
+                                                                    </span>
+
+                                                                    <span class="c-discount_price-now">
+                                                                        ۸۹۸۰۰۰
+                                                                        <span>تومان</span>
+                                                                    </span>
+
+                                                                </div>
+
+                                                                <div class="mobile-discount_price-primary">
+                                                                    ۱۱۸۰۰۰۰۰
+                                                                    <span>تومان</span>
+                                                                    <del>۸۹۸۰۰۰</del>
+                                                                </div>
+
+
+                                                                <div class="c-discount_price-discount">
+                                                                    <div class="c-discount_price-dicount_content">
+                                                                        ۲۴%
+                                                                        <span>تخفیف</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="c-discount_price-finish js-discount_price-finish">
+                                                                اتمام موجودی شگفت‌انگیز
+                                                            </div>
+
+                                                            <div class="c-discount_title">
+                                                                اجاق گاز صفحه‌ای پرینسپ مدل PL532
+                                                            </div>
+
+                                                            <ul class="c-discount_ul">
+                                                                <li>محدوده سایز:85 و بزرگتر از 85</li>
+                                                                <li>تعداد شعله: 5</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="c-discount_prop-row">
+                                                            <div class="c-discount_counter js-discount_counter">
+                                                                <div class="c-counter js-counter"
+                                                                    data-nowdate="2018-10-10T12:35:20.000Z"
+                                                                    data-discountdate="2018-10-10T12:35:35.000Z">
+
+                                                                </div>
+                                                                <div class="c-discount_counter-title">
+                                                                    زمان باقیمانده تا پایان سفارش
+                                                                </div>
+
+                                                            </div>
+                                                            <div
+                                                                class="c-discount_counter c-discount_counter-finish js-discount_counter-finish">
+                                                                <div class="c-discount_price">
+                                                                    <div class="c-discount_price-primary">
+                                                                        <span class="c-discount_price-now">
+                                                                            ۸۹۸۰۰۰
+                                                                            <span>تومان</span>
+                                                                        </span>
+                                                                        <div class="c-discount_counter-title">
+                                                                            بدون تخفیف شگفت انگیز
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="c-discount_container is-active js-discount_container">
+                                                <a href="#" class="c-discount_product-url"></a>
+
+                                                <div class="c-discount_content">
+                                                    <div class="c-discount_image">
+                                                        <div class="c-discount_image-top-bar"></div>
+                                                        <img src="/img/discount/10.jpg" alt="ساعت">
+                                                    </div>
+
+                                                    <div class="c-discount_prop">
+                                                        <div class="c-discount_prop-row">
+                                                            <div class="mobile-discount_title">
+                                                                اجاق گاز صفحه‌ای پرینسپ مدل PL532
+                                                            </div>
+                                                            <div class="c-discount_price js-discount_price">
+                                                                <div class="c-discount_price-primary">
+                                                                    <span class="c-discount_price-original">
+                                                                        ۱۱۸۰۰۰۰۰
+                                                                        <span>تومان</span>
+                                                                    </span>
+
+                                                                    <span class="c-discount_price-now">
+                                                                        ۸۹۸۰۰۰
+                                                                        <span>تومان</span>
+                                                                    </span>
+
+                                                                </div>
+
+                                                                <div class="mobile-discount_price-primary">
+                                                                    ۱۱۸۰۰۰۰۰
+                                                                    <span>تومان</span>
+                                                                    <del>۸۹۸۰۰۰</del>
+                                                                </div>
+
+
+                                                                <div class="c-discount_price-discount">
+                                                                    <div class="c-discount_price-dicount_content">
+                                                                        ۲۴%
+                                                                        <span>تخفیف</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="c-discount_price-finish js-discount_price-finish">
+                                                                اتمام موجودی شگفت‌انگیز
+                                                            </div>
+
+                                                            <div class="c-discount_title">
+                                                                اجاق گاز صفحه‌ای پرینسپ مدل PL532
+                                                            </div>
+
+                                                            <ul class="c-discount_ul">
+                                                                <li>محدوده سایز:85 و بزرگتر از 85</li>
+                                                                <li>تعداد شعله: 5</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="c-discount_prop-row">
+                                                            <div class="c-discount_counter js-discount_counter">
+                                                                <div class="c-counter js-counter"
+                                                                    data-nowdate="2018-10-10T12:35:20.000Z"
+                                                                    data-discountdate="2018-10-10T12:35:35.000Z">
+
+                                                                </div>
+                                                                <div class="c-discount_counter-title">
+                                                                    زمان باقیمانده تا پایان سفارش
+                                                                </div>
+
+                                                            </div>
+                                                            <div
+                                                                class="c-discount_counter c-discount_counter-finish js-discount_counter-finish">
+                                                                <div class="c-discount_price">
+                                                                    <div class="c-discount_price-primary">
+                                                                        <span class="c-discount_price-now">
+                                                                            ۸۹۸۰۰۰
+                                                                            <span>تومان</span>
+                                                                        </span>
+                                                                        <div class="c-discount_counter-title">
+                                                                            بدون تخفیف شگفت انگیز
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="c-discount_aside">
+                                            <div class="c-discount_aside-container js-discount_aside-container">
+                                                <ul class="c-discount_aside-ul js-discount_aside-ul">
+                                                    <li class="c-discount_aside-li js-discount_aside-li">
+                                                        <a class="c-discount_aside-a js-discount_aside-a is-active">
+                                                            <span>ساعت مچی عقربه‌ای زنانه پرایمر</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="c-discount_aside-li js-discount_aside-li">
+                                                        <a class="c-discount_aside-a js-discount_aside-a ">
+                                                            <span>آبمیوه گیری لومکس</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="c-discount_aside-li js-discount_aside-li">
+                                                        <a class="c-discount_aside-a js-discount_aside-a ">
+                                                            <span>اینورتر فنجانی انرجایرز</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="c-discount_aside-li js-discount_aside-li">
+                                                        <a class="c-discount_aside-a js-discount_aside-a ">
+                                                            <span>کارت حافظه اپیسر</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="c-discount_aside-li js-discount_aside-li">
+                                                        <a class="c-discount_aside-a js-discount_aside-a ">
+                                                            <span>دوربین دیجیتال سامسونگ</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="c-discount_aside-li js-discount_aside-li">
+                                                        <a class="c-discount_aside-a js-discount_aside-a ">
+                                                            <span>سشوار رمینگتون</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="c-discount_aside-li js-discount_aside-li">
+                                                        <a class="c-discount_aside-a js-discount_aside-a ">
+                                                            <span>لپه چاپار</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="c-discount_aside-li js-discount_aside-li">
+                                                        <a class="c-discount_aside-a js-discount_aside-a ">
+                                                            <span>تلویزیون ال سی دی یرا</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="c-discount_aside-li js-discount_aside-li">
+                                                        <a class="c-discount_aside-a js-discount_aside-a ">
+                                                            <span>پوشک مای بیبی</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="c-discount_aside-li js-discount_aside-li">
+                                                        <a class="c-discount_aside-a js-discount_aside-a ">
+                                                            <span>ادو تویلت مردانه داویدوف</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                                <a class="c-discount_aside-a c-discount_aside-button">
+                                                    مشاهده همه شگفت‌انگیزها
+                                                </a>
+                                            </div>
+
+                                            <div class="c-discount_btn-next js-discount_btn-next"></div>
+                                            <div class="c-discount_btn-prev js-discount_btn-prev"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="mobile-discount_show-more">مشاهده بیشتر</a>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="c-feature_main-page">
+                    <div class="c-footer_feature">
+                        <a href="#">
+                            <div class="c-footer-feature_item c-sliders_right-feature_item-1">تحویل اکسپرس</div>
+                        </a>
+                        <a href="#">
+                            <div class="c-footer-feature_item c-sliders_right-feature_item-2">پشتیبانی ۲۴ ساعته</div>
+                        </a>
+
+                        <a href="#">
+                            <div class="c-footer-feature_item c-sliders_right-feature_item-3">پرداخت در محل</div>
+                        </a>
+
+                        <a href="#">
+                            <div class="c-footer-feature_item c-sliders_right-feature_item-4">هفت رو ضمانت بازگشت</div>
+                        </a>
+
+                        <a href="#">
+                            <div class="c-footer-feature_item c-sliders_right-feature_item-5">ضمانت اصل بودن کالا</div>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+
+            <div class="c-discount_banner c-discount_banner-first ">
+                <a class="c-discount_banner-item">
+                    <img src="/img/discount/banner/1.jpg">
+                </a>
+
+                <a class="c-discount_banner-item">
+                    <img src="/img/discount/banner/2.jpg">
+                </a>
+
+                <a class="c-discount_banner-item">
+                    <img src="/img/discount/banner/3.jpg">
+                </a>
+
+                <a class="c-discount_banner-item">
+                    <img src="/img/discount/banner/4.jpg">
+                </a>
+            </div>
+
+            <div class="c-top_swiper">
+                <div class="c-top_swiper-right">
+                    <section class="c-swiper">
+                        <div class="c-swiper_headline">
+                            <span>کالای دیجیتال</span>
+                        </div>
+
+                        <div class="c-swiper_content js-swiper_content" data-count-lg="3.5" data-count-xl="3.75"
+                            data-count-xxl="5">
+                            <div class="c-swiper_container" id="swiper1">
+                                <div class=" c-swiper_box swiper-wrapper js-swiper_box swiper-wrapper">
+                                    <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                        <a class="c-swiper_url" href="#">
+                                            <span class="c-swiper_img">
+                                                <img src="/img/swiper/digital/12.jpg" alt="کارت حافظه">
+                                            </span>
+                                            <span class="c-swiper_title">
+                                                کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                            </span>
+
+                                            <span class="c-swiper_price">
+                                                <span class="c-swiper_price-value">
+                                                    ۴۹۹۰۰
+                                                    <span>تومان</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                        <a class="c-swiper_url" href="#">
+                                            <span class="c-swiper_img">
+                                                <img src="/img/swiper/digital/2.jpg">
+                                            </span>
+                                            <span class="c-swiper_title">
+                                                کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                            </span>
+
+                                            <span class="c-swiper_price">
+                                                <span class="c-swiper_price-value">
+                                                    ۴۹۹۰۰
+                                                    <span>تومان</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                        <a class="c-swiper_url" href="#">
+                                            <span class="c-swiper_img">
+                                                <img src="/img/swiper/digital/3.jpg">
+                                            </span>
+                                            <span class="c-swiper_title">
+                                                کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                            </span>
+
+                                            <span class="c-swiper_price">
+                                                <span class="c-swiper_price-value">
+                                                    ۴۹۹۰۰
+                                                    <span>تومان</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                        <a class="c-swiper_url" href="#">
+                                            <span class="c-swiper_img">
+                                                <img src="/img/swiper/digital/4.jpg">
+                                            </span>
+                                            <span class="c-swiper_title">
+                                                کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                            </span>
+
+                                            <span class="c-swiper_price">
+                                                <span class="c-swiper_price-value">
+                                                    ۴۹۹۰۰
+                                                    <span>تومان</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                        <a class="c-swiper_url" href="#">
+                                            <span class="c-swiper_img">
+                                                <img src="/img/swiper/digital/5.jpg">
+                                            </span>
+                                            <span class="c-swiper_title">
+                                                کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                            </span>
+
+                                            <span class="c-swiper_price">
+                                                <span class="c-swiper_price-value">
+                                                    ۴۹۹۰۰
+                                                    <span>تومان</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                        <a class="c-swiper_url" href="#">
+                                            <span class="c-swiper_img">
+                                                <img src="/img/swiper/digital/6.jpg">
+                                            </span>
+                                            <span class="c-swiper_title">
+                                                کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                            </span>
+
+                                            <span class="c-swiper_price">
+                                                <span class="c-swiper_price-value">
+                                                    ۴۹۹۰۰
+                                                    <span>تومان</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                        <a class="c-swiper_url" href="#">
+                                            <span class="c-swiper_img">
+                                                <img src="/img/swiper/digital/7.jpg">
+                                            </span>
+                                            <span class="c-swiper_title">
+                                                کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                            </span>
+
+                                            <span class="c-swiper_price">
+                                                <span class="c-swiper_price-value">
+                                                    ۴۹۹۰۰
+                                                    <span>تومان</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                        <a class="c-swiper_url" href="#">
+                                            <span class="c-swiper_img">
+                                                <img src="/img/swiper/digital/8.jpg">
+                                            </span>
+                                            <span class="c-swiper_title">
+                                                کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                            </span>
+
+                                            <span class="c-swiper_price">
+                                                <span class="c-swiper_price-value">
+                                                    ۴۹۹۰۰
+                                                    <span>تومان</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+
+                                    <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                        <a class="c-swiper_url" href="#">
+                                            <span class="c-swiper_img">
+                                                <img src="/img/swiper/digital/9.jpg">
+                                            </span>
+                                            <span class="c-swiper_title">
+                                                کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                            </span>
+
+                                            <span class="c-swiper_price">
+                                                <span class="c-swiper_price-value">
+                                                    ۴۹۹۰۰
+                                                    <span>تومان</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="c-swiper_btn-next js-swiper_btn-next"></div>
+                                <div class="c-swiper_btn-prev js-swiper_btn-prev"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+
+                <div class="c-top_swiper-left">
+                    <aside class="c-single_swiper">
+                        <div class="c-single_swiper-content">
+                            <div class="c-single_swiper-headline js-single_swiper-headline is-active">
+                                پیشنهادهای لحظه‌ای برای شما
+                            </div>
+
+                            <div class="c-single_swiper-container">
+                                <div class="c-single_swiper-box js-single_swiper-box">
+                                    <a class="c-single_swiper-slide js-single_swiper-slide" href="#"
+                                        style="width:218px">
+                                        <span class="c-single_swiper-img">
+                                            <img src="/img/swiper/single/1.jpg">
+                                        </span>
+                                        <span class="c-single_swiper-desc">
+                                            <span class="c-single_swiper-title">
+                                                اسپری خوشبوکننده مردانه sliver protect...
+                                            </span>
+                                            <span class="c-single_swiper-price">
+                                                <del>۴۵۰۰۰</del>
+                                                <span>۴۰۰۰۰ تومان</span>
+                                            </span>
+                                        </span>
+                                    </a>
+
+
+                                    <a class="c-single_swiper-slide js-single_swiper-slide" href="#"
+                                        style="width:218px">
+                                        <span class="c-single_swiper-img">
+                                            <img src="/img/swiper/single/2.jpg">
+                                        </span>
+                                        <span class="c-single_swiper-desc">
+                                            <span class="c-single_swiper-title">
+                                                اسپری خوشبوکننده مردانه sliver protect...
+                                            </span>
+                                            <span class="c-single_swiper-price">
+                                                <del>۴۵۰۰۰</del>
+                                                <span>۴۰۰۰۰ تومان</span>
+                                            </span>
+                                        </span>
+                                    </a>
+
+
+                                    <a class="c-single_swiper-slide js-single_swiper-slide" href="#"
+                                        style="width:218px">
+                                        <span class="c-single_swiper-img">
+                                            <img src="/img/swiper/single/3.jpg">
+                                        </span>
+                                        <span class="c-single_swiper-desc">
+                                            <span class="c-single_swiper-title">
+                                                اسپری خوشبوکننده مردانه sliver protect...
+                                            </span>
+                                            <span class="c-single_swiper-price">
+                                                <del>۴۵۰۰۰</del>
+                                                <span>۴۰۰۰۰ تومان</span>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                    <a class="c-single_swiper-slide js-single_swiper-slide" href="#"
+                                        style="width:218px">
+                                        <span class="c-single_swiper-img">
+                                            <img src="/img/swiper/single/4.jpg">
+                                        </span>
+                                        <span class="c-single_swiper-desc">
+                                            <span class="c-single_swiper-title">
+                                                اسپری خوشبوکننده مردانه sliver protect...
+                                            </span>
+                                            <span class="c-single_swiper-price">
+                                                <del>۴۵۰۰۰</del>
+                                                <span>۴۰۰۰۰ تومان</span>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                    <a class="c-single_swiper-slide js-single_swiper-slide" href="#"
+                                        style="width:218px">
+                                        <span class="c-single_swiper-img">
+                                            <img src="/img/swiper/single/5.jpg">
+                                        </span>
+                                        <span class="c-single_swiper-desc">
+                                            <span class="c-single_swiper-title">
+                                                اسپری خوشبوکننده مردانه sliver protect...
+                                            </span>
+                                            <span class="c-single_swiper-price">
+                                                <del>۴۵۰۰۰</del>
+                                                <span>۴۰۰۰۰ تومان</span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+
+            <section class="c-swiper">
+                <div class="c-swiper_headline">
+                    <span>کتاب، لوازم تحریر و هنر</span>
+                </div>
+
+                <div class="c-swiper_content js-swiper_content" data-count-lg="4" data-count-xl="5" data-count-xxl="6">
+                    <div class="c-swiper_container">
+                        <div class=" c-swiper_box swiper-wrapper js-swiper_box">
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/2/1.jpg" alt="کارت حافظه">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/2/2.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/2/3.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/2/4.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/2/5.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/2/6.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/7.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/8.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/9.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="c-swiper_btn-next js-swiper_btn-next"></div>
+                        <div class="c-swiper_btn-prev js-swiper_btn-prev "></div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="c-about-digikala-banner">
+                <div class="c-discount_banner">
+
+                    <a class="c-discount_banner-item">
+                        <img src="/img/banner/about/1.jpg">
+                    </a>
+
+                    <a class="c-discount_banner-item">
+                        <img src="/img/banner/about/2.jpg">
+                    </a>
+
+                    <a class="c-discount_banner-item">
+                        <img src="/img/banner/about/3.jpg">
+                    </a>
+
+                    <a class="c-discount_banner-item">
+                        <img src="/img/banner/about/4.jpg">
+                    </a>
+                </div>
+            </div>
+
+            <section class="c-swiper">
+                <div class="c-swiper_headline">
+                    <span>اوازم بهداشتی</span>
+                </div>
+
+                <div class="c-swiper_content js-swiper_content" data-count-lg="4" data-count-xl="5" data-count-xxl="6">
+                    <div class="c-swiper_container">
+                        <div class=" c-swiper_box swiper-wrapper js-swiper_box">
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/3/1.jpg" alt="کارت حافظه">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/3/2.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/3/3.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/3/4.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/2/5.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/2/6.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/7.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/8.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/9.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="c-swiper_btn-next js-swiper_btn-next"></div>
+                        <div class="c-swiper_btn-prev js-swiper_btn-prev "></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="c-swiper">
+                <div class="c-swiper_headline">
+                    <span>شوینده ظروف</span>
+                </div>
+
+                <div class="c-swiper_content js-swiper_content" data-count-lg="4" data-count-xl="5" data-count-xxl="6">
+                    <div class="c-swiper_container">
+                        <div class=" c-swiper_box swiper-wrapper js-swiper_box">
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/4/1.jpg" alt="کارت حافظه">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/4/2.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/4/3.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/4/4.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/2/5.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/2/6.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/7.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/8.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/9.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="c-swiper_btn-next js-swiper_btn-next"></div>
+                        <div class="c-swiper_btn-prev js-swiper_btn-prev "></div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="c-discount_banner">
+                <a class="c-discount_banner-item">
+                    <img src="/img/discount/banner/6.jpg">
+                </a>
+
+                <a class="c-discount_banner-item">
+                    <img src="/img/discount/banner/7.jpg">
+                </a>
+            </div>
+
+            <section class="c-swiper">
+                <div class="c-swiper_headline">
+                    <span>خانه و آشپزخانه</span>
+                </div>
+
+                <div class="c-swiper_content js-swiper_content" data-count-lg="4" data-count-xl="5" data-count-xxl="6">
+                    <div class="c-swiper_container">
+                        <div class=" c-swiper_box swiper-wrapper js-swiper_box">
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/5/1.jpg" alt="کارت حافظه">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/5/2.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/5/3.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/5/4.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/5/5.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/2/6.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/7.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/8.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/9.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="c-swiper_btn-next js-swiper_btn-next"></div>
+                        <div class="c-swiper_btn-prev js-swiper_btn-prev "></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="c-swiper">
+                <div class="c-swiper_headline">
+                    <span>محصولات پر بازدید اخیر</span>
+                </div>
+
+                <div class="c-swiper_content js-swiper_content" data-count-lg="4" data-count-xl="5" data-count-xxl="6">
+                    <div class="c-swiper_container">
+                        <div class=" c-swiper_box swiper-wrapper js-swiper_box">
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/4/1.jpg" alt="کارت حافظه">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/4/2.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/4/3.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/4/4.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/2/5.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/2/6.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/7.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/8.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/9.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="c-swiper_btn-next js-swiper_btn-next"></div>
+                        <div class="c-swiper_btn-prev js-swiper_btn-prev "></div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="c-discount_banner c-discount_banner-single">
+                <a class="c-discount_banner-item">
+                    <img src="/img/discount/banner/8.jpg">
+                </a>
+            </div>
+
+            <section class="c-swiper">
+                <div class="c-swiper_headline">
+                    <span>منتخب جدیدترین کالاها</span>
+                </div>
+
+                <div class="c-swiper_content js-swiper_content" data-count-lg="4" data-count-xl="5" data-count-xxl="6">
+                    <div class="c-swiper_container">
+                        <div class=" c-swiper_box swiper-wrapper js-swiper_box">
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/5/1.jpg" alt="کارت حافظه">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/5/2.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/5/3.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/5/4.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/5/5.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/2/6.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/7.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/8.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/9.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="c-swiper_btn-next js-swiper_btn-next"></div>
+                        <div class="c-swiper_btn-prev js-swiper_btn-prev "></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="c-swiper">
+                <div class="c-swiper_headline">
+                    <span>محصولات پر فروش اخیر</span>
+                </div>
+
+                <div class="c-swiper_content js-swiper_content" data-count-lg="4" data-count-xl="5" data-count-xxl="6">
+                    <div class="c-swiper_container">
+                        <div class=" c-swiper_box swiper-wrapper js-swiper_box">
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/5/1.jpg" alt="کارت حافظه">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/5/2.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/5/3.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/5/4.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/5/5.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/2/6.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/7.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/8.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/9.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="c-swiper_btn-next js-swiper_btn-next"></div>
+                        <div class="c-swiper_btn-prev js-swiper_btn-prev "></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="c-swiper c-swiper_brand">
+                <div class="c-swiper_headline">
+                    <span>محصولات پر فروش اخیر</span>
+                </div>
+
+                <div class="c-swiper_content js-swiper_content" data-count-lg="5" data-count-xl="5" data-count-xxl="6">
+                    <div class="c-swiper_container">
+                        <div class=" c-swiper_box swiper-wrapper js-swiper_box">
+                            <div class="c-swiper_slide swiper-slide" style="width:257.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <img src="/img/swiper/brand/1.png" alt="کارت حافظه">
+                                </a>
+                            </div>
+                            <div class="c-swiper_slide swiper-slide" style="width:257.85px">
+
+                                <a class="c-swiper_url" href="#">
+                                    <img src="/img/swiper/brand/2.png" alt="کارت حافظه">
+                                </a>
+                            </div>
+                            <div class="c-swiper_slide swiper-slide" style="width:257.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <img src="/img/swiper/brand/3.png" alt="کارت حافظه">
+                                </a>
+                            </div>
+                            <div class="c-swiper_slide swiper-slide" style="width:257.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <img src="/img/swiper/brand/4.png" alt="کارت حافظه">
+                                </a>
+                            </div>
+                            <div class="c-swiper_slide swiper-slide" style="width:257.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <img src="/img/swiper/brand/5.png" alt="کارت حافظه">
+                                </a>
+                            </div>
+                            <div class="c-swiper_slide swiper-slide" style="width:257.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <img src="/img/swiper/brand/6.png" alt="کارت حافظه">
+                                </a>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="c-swiper_btn-next js-swiper_btn-next"></div>
+                        <div class="c-swiper_btn-prev js-swiper_btn-prev "></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="c-swiper">
+                <div class="c-swiper_headline">
+                    <span>منتخب محصولات حراج و تخفیف</span>
+                </div>
+
+                <div class="c-swiper_content js-swiper_content" data-count-lg="4" data-count-xl="5" data-count-xxl="6">
+                    <div class="c-swiper_container">
+                        <div class=" c-swiper_box swiper-wrapper js-swiper_box">
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/5/1.jpg" alt="کارت حافظه">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/5/2.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/5/3.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/5/4.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/5/5.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/2/6.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/7.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/8.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                <a class="c-swiper_url" href="#">
+                                    <span class="c-swiper_img">
+                                        <img src="/img/swiper/digital/9.jpg">
+                                    </span>
+                                    <span class="c-swiper_title">
+                                        کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                    </span>
+
+                                    <span class="c-swiper_price">
+                                        <span class="c-swiper_price-value">
+                                            ۴۹۹۰۰
+                                            <span>تومان</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="c-swiper_btn-next js-swiper_btn-next"></div>
+                        <div class="c-swiper_btn-prev js-swiper_btn-prev "></div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
