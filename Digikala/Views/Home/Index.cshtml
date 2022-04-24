@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Digikala.DataLayer.Entities.Slider>
+﻿
 @{
     ViewData["Title"] = "فروشگاه اینترنتی دیجی کالا";
 }
@@ -47,63 +47,7 @@
                     </div>
                     <div class="c-sliders_left">
 
-                        <section class="c-main_slider c-desktop_main-slider js-main_slider">
-                            <div class="c-slider_slide swiper-wrapper">
-                                @foreach(var item in Model)
-                                {
-
-                                <a class="c-slide js-slide swiper-slide" title="@item.Descrption" style="background-image:url(/img/slider/@item.ImgName)"
-                                    href="@item.Link"></a>
-                                }
-                               @* <a class="c-slide js-slide swiper-slide" style="background-image:url(/img/slider/2.jpg)"
-                                    href="#"></a>
-                                <a class="c-slide js-slide swiper-slide" style="background-image:url(/img/slider/3.jpg)"
-                                    href="#"></a>
-                                <a class="c-slide js-slide swiper-slide" style="background-image:url(/img/slider/4.jpg)"
-                                    href="#"></a>
-                                <a class="c-slide js-slide swiper-slide" style="background-image:url(/img/slider/5.jpg)"
-                                    href="#"></a>*@
-                            </div>
-
-                            <div class="c-slider_dots">
-
-
-                            </div>
-
-                            <div class="c-slider_next js-slider_next"></div>
-                            <div class="c-slider_prev js-slider_prev"></div>
-
-                        </section>
-
-                        <section class="c-main_slider mobil-main_slider js-main_slider">
-                            <div class="c-slider_slide swiper-wrapper">
-                                  @foreach(var item in Model)
-                                {
-
-                                <a class="c-slide js-slide swiper-slide" title="@item.Descrption" style="background-image:url(/img/slider/mobile-slider/@item.ImgName)"
-                                    href="@item.Link"></a>
-                                }
-                             @*   <a class="c-slide js-slide swiper-slide"
-                                    style="background-image:url(/img/slider/mobile-slider/1.png)" href="#"></a>
-                                <a class="c-slide js-slide swiper-slide"
-                                    style="background-image:url(/img/slider/mobile-slider/2.png)" href="#"></a>
-                                <a class="c-slide js-slide swiper-slide"
-                                    style="background-image:url(/img/slider/mobile-slider/3.png)" href="#"></a>
-                                <a class="c-slide js-slide swiper-slide"
-                                    style="background-image:url(/img/slider/mobile-slider/4.png)" href="#"></a>
-                                <a class="c-slide js-slide swiper-slide"
-                                    style="background-image:url(/img/slider/mobile-slider/5.png)" href="#"></a>*@
-                            </div>
-
-                            <div class="c-slider_dots">
-
-
-                            </div>
-
-                            <div class="c-slider_next js-slider_next"></div>
-                            <div class="c-slider_prev js-slider_prev"></div>
-
-                        </section>
+                        @await Component.InvokeAsync("SliderComponent");
 
                         <div class="c-sliders_discount">
                             <div class="c-dicount_right">
