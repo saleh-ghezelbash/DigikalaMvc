@@ -1,0 +1,92 @@
+﻿@model Digikala.Core.ViewModels.Category.ShowCategoriesForUserViewModel
+
+@{
+    ViewData["Title"] = Model.FaTitle;
+    Layout = "~/Views/Shared/_DefaultLayout.cshtml";
+}
+
+@section style{
+    <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
+
+}
+
+     <main>
+            <div class="container">
+                <nav>
+                    <ul class="c-breadcrumb">
+                        <li><a href="#"><span>فروشگاه اینترنتی دیجی‌کالا</span></a></li><li><span>کالای دیجیتال</span></li>
+                    </ul>
+                </nav>
+
+                <div class="c-category_card js-category_card">
+                    @foreach (var item in Model.categories)
+                   {
+                       
+                  
+                    <section class="c-category_card_item js-category_card_item">
+                        <div class="c-category_card_content">
+                            <a href="#">
+                                <div class="c-category_card-header">
+                                    <img class="c-category_card_image" src="/img/category/@item.ImgName">
+                                    <div class="c-category_card_title">@item.FaTitle</div>
+                                </div>
+                            </a>
+
+                           @await Component.InvokeAsync("ShowSubCategoryComponent",item.CategoryId);
+                        
+                        </div>
+                    </section>
+                    }
+             
+                </div>
+
+             @*   
+                <section class="c-swiper">
+                        <div class="c-swiper_headline">
+                            <span>خانه و آشپزخانه</span>
+                        </div>
+    
+                        <div class="c-swiper_content js-swiper_content" data-count-lg="4" data-count-xl="5" data-count-xxl="6">
+                            <div class="c-swiper_container" >
+                                <div class=" c-swiper_box swiper-wrapper js-swiper_box">
+
+                                    <div class="c-swiper_slide swiper-slide" style="width:298.85px">
+                                        <a class="c-swiper_url" href="#">
+                                            <span class="c-swiper_img">
+                                                <img src="img/swiper/5/1.jpg" alt="کارت حافظه">
+                                            </span>
+                                            <span class="c-swiper_title">
+                                                کارت حافظه microSDHC سن دیسک کلاس 4 حافظه 8 گیگابا...
+                                            </span>
+    
+                                            <span class="c-swiper_price">
+                                                <span class="c-swiper_price-value">
+                                                    ۴۹۹۰۰
+                                                    <span>تومان</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+    
+                  
+                               
+                                </div>
+    
+                                <div class="c-swiper_btn-next js-swiper_btn-next"></div>
+                                <div class="c-swiper_btn-prev js-swiper_btn-prev "></div>
+                            </div>
+                        </div>
+                </section>*@
+
+          
+
+            </div>
+        </main>
+    
+
+@section script{
+    <script>
+             mainswiper()
+             category_card()
+        </script>
+}

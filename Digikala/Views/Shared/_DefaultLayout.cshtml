@@ -2,101 +2,40 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-
-    <title>@ViewData["Title"]</title>
+     <meta charset="utf-8">
+    <title>@ViewData["Title"] | فروشگاه اینترنتی دیجی‌کالا</title>
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
+    <meta name="description" content="توضیحات متا" />
+    <meta name="keywords" content="کلمات کلیدی" />
+    <meta http-equiv="content-type" content="text/html;charset:utf-8" />
+    <meta property="og:type" content="Product" />
+    <meta property="og:description" />
+
+    <meta name="robots" content="index" />
+
+    @RenderSection("style", false)
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/css/default.css">
     <link rel="stylesheet" type="text/css" href="/css/style_1366.css" media="screen and (min-width:1366px">
     <link rel="stylesheet" type="text/css" href="/css/style_max_1365.css" media="screen and (max-width:1365px">
     <link rel="stylesheet" type="text/css" href="/css/mobile_style.css" media="screen and (max-width:720px">
+    <script src="/js/jquery-3.3.1.min.js"></script>
 </head>
 
-<body>
-    <Partial name="_header" />
+<body class="@ViewBag.Bodyclass">
+    <partial name="_header" />
     <div class="c-cover js-cover"></div>
-
     @RenderBody()
+    <partial name="_footer" />
 
-    <Partial name="_footer" />
 
-
-    <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/persianumber.js"></script>
-    <script src="/js/swiper.min.js"></script>
     <script src="/js/main.js"></script>
-
     <script>
-        var mySwiper = new Swiper('.js-main_slider', {
-            // Optional parameters
-            effect: "fade",
-            loop: true,
-
-            autoplay: {
-                delay: 5000,
-            },
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            },
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.js-slider_next',
-                prevEl: '.js-slider_prev',
-            },
-            pagination: {
-                el: '.c-slider_dots',
-                type: 'bullets',
-                clickable: true
-            },
-
-
-        })
-
-        mainswiper()
-
-        var Swiper1 = new Swiper('#swiper1', {
-            slidesPerView: 2,
-
-            breakpointsInverse: true,
-            breakpoints: {
-                // when window width is >= 320px
-                1680: {
-                    slidesPerView: 5,
-
-                },
-                // when window width is >= 480px
-                1368: {
-                    slidesPerView: 3.75,
-
-                },
-                // when window width is >= 640px
-                1008: {
-                    slidesPerView: 3.5,
-
-                }
-            },
-            // If we need pagination
-
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.js-swiper_btn-next',
-                prevEl: '.js-swiper_btn-prev',
-            },
-
-
-
-        })
-
-
+        Open_Dropdown_User();
+        headerSearch()
+        tofaprice()
     </script>
-
-
+    @RenderSection("script", false)
 
 </body>
 

@@ -1,4 +1,9 @@
-﻿
+﻿@section style{
+    <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/default.css">
+
+}
+
 @{
     ViewData["Title"] = "فروشگاه اینترنتی دیجی کالا";
 }
@@ -2876,4 +2881,74 @@
             </section>
         </article>
     </main>
+
+    @section script{
+          <script>
+        var mySwiper = new Swiper('.js-main_slider', {
+            // Optional parameters
+            effect: "fade",
+            loop: true,
+
+            autoplay: {
+                delay: 5000,
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.js-slider_next',
+                prevEl: '.js-slider_prev',
+            },
+            pagination: {
+                el: '.c-slider_dots',
+                type: 'bullets',
+                clickable: true
+            },
+
+
+        })
+
+        mainswiper()
+
+        var Swiper1 = new Swiper('#swiper1', {
+            slidesPerView: 2,
+
+            breakpointsInverse: true,
+            breakpoints: {
+                // when window width is >= 320px
+                1680: {
+                    slidesPerView: 5,
+
+                },
+                // when window width is >= 480px
+                1368: {
+                    slidesPerView: 3.75,
+
+                },
+                // when window width is >= 640px
+                1008: {
+                    slidesPerView: 3.5,
+
+                }
+            },
+            // If we need pagination
+
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.js-swiper_btn-next',
+                prevEl: '.js-swiper_btn-prev',
+            },
+
+
+
+        })
+
+
+    </script>
+    }
 
