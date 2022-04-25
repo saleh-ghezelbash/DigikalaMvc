@@ -31,5 +31,8 @@ namespace Digikala.DataLayer.Entities.Brand
         public string Descrption { get; set; }
 
         public List<BrandCategory> BrandCategories { get; set; }
+               
+        public List<Product.Product> Products { get; set; }
+       
     }
 }

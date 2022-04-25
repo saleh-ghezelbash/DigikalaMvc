@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using Digikala.DataLayer.Entities.Brand;
+using Digikala.DataLayer.Entities.Product;
 
 namespace Digikala.DataLayer.Entities.Category
 {
@@ -36,6 +37,10 @@ namespace Digikala.DataLayer.Entities.Category
         public List<SubCategory> ParentCategory { get; set; }
         public List<SubCategory> SubCategory { get; set; }
         public List<BrandCategory> BrandCategories { get; set; }
+
+        public List<Product.Product> Products { get; set; }
+        public List<CategoryRating> CategoryRatings { get; set; }
+        public List<ProductCategory> ProductCategories { get; set; }
   
 
     }
