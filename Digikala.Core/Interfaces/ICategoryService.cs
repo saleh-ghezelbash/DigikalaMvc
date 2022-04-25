@@ -11,6 +11,7 @@ namespace Digikala.Core.Interfaces
         Category GetCategoryByName(string catname);
         List<Category> GetSubCategoryById(int parentid);
         ShowCategoriesForUserViewModel GetSubCategoryByName(string catname);
+        List<CategoryForBrandViewModel> GetCategoryByBrandID(int brandid);
 
     }
 }

@@ -1,16 +1,16 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
-using Digikala.DataLayer.Entities.Brand;
+using System.Text;
 
-namespace Digikala.DataLayer.Entities.Category
+
+namespace Digikala.DataLayer.Entities.Brand
 {
-   public class Category
+    public class Brand
     {
         [Key]
-        public int CategoryId { get; set; }
+        public int BrandId { get; set; }
+
         [Display(Name = "عنوان فارسی")]
         [MaxLength(100, ErrorMessage = "مقدار {0} نباید بیشتراز{1} باشد")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
@@ -29,14 +29,7 @@ namespace Digikala.DataLayer.Entities.Category
         [MaxLength(100, ErrorMessage = "مقدار {0} نباید بیشتراز{1} باشد")]
         [Required(ErrorMessage = "لطفا {0} را وارد کنید")]
         public string Descrption { get; set; }
-        public bool IsDelete { get; set; }
-        public bool IsMain { get; set; }
 
-
-        public List<SubCategory> ParentCategory { get; set; }
-        public List<SubCategory> SubCategory { get; set; }
         public List<BrandCategory> BrandCategories { get; set; }
-  
-
     }
 }

@@ -47,6 +47,19 @@ namespace Digikala.Core.Services
             return showCategoriesvm;
         }
 
+        public List<CategoryForBrandViewModel> GetCategoryByBrandID(int brandid)
+        {
+            IQueryable<CategoryForBrandViewModel> categoris = (from c in _context.Categories
+                                                               join b in _context.BrandCategories
+                                                               on c.CategoryId equals b.CategoryId
+                                                               where b.BrandId == brandid
+                                                               select new CategoryForBrandViewModel {
+                                                                   Id=c.CategoryId,
+                                                                   Fatitle=c.FaTitle
+                                                               }) ;
+            return categoris.ToList();
+        }
+
 
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Digikala.DataLayer.Entities;
+using Digikala.DataLayer.Entities.Brand;
 using Digikala.DataLayer.Entities.Category;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,6 +19,8 @@ namespace Digikala.DataLayer.Context
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<SubCategory> SubCategories { get; set; }
+        public DbSet<Brand> Brands { get; set; }
+        public DbSet<BrandCategory> BrandCategories { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

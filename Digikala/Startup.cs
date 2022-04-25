@@ -36,6 +36,7 @@ namespace Digikala
 
             services.AddTransient<ISliderService, SliderService>();
             services.AddTransient<ICategoryService, CategoryService>();
+            services.AddTransient<IBrandService, BrandService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
